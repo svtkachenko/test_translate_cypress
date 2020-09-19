@@ -1,0 +1,21 @@
+{
+  "name": "test_translate_cypress",
+  "version": "0.1.0",
+  "description": "Example how to test Google Translate page using Cypress framework.",
+  "main": "index.js",
+  "author": "Stanislav Tkachenko",
+  "license": "MIT",
+  "dependencies": {
+    "cypress": "^5.2.0",
+    "cypress-file-upload": "^4.1.1"
+  },
+  "devDependencies": {
+    "eslint": "^7.9.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-cypress": "^2.11.1",
+    "eslint-plugin-prettier": "^3.1.4",
+    "husky": "^4.3.0",
+    "lint-staged": "^10.4.0",
+    "prettier": "^2.1.2"
+  }
+}

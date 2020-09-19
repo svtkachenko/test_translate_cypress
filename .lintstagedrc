@@ -1,0 +1,7 @@
+{
+    '**/*.+(js|md|css|sass|less|scss|json)': [
+      'eslint --no-ignore --color',
+      'prettier --write',
+      'git add',
+    ],
+}
