@@ -30,6 +30,18 @@ All available specs in Electron browser: `docker run -it -v $PWD:/e2e -w /e2e cy
 
 Specific browser: `docker run -it -v $PWD:/e2e -w /e2e cypress/included:5.2.0 -b chromium`
 
+## Fetching results
+
+When running in non-interactive mode, both in a docker and locally, videos and screenshots could be found in
+`cypress/videos` and `cypress/screenshots` folders.
+
+For docker videos could be disable this way:
+
+```
+$ CYPRESS_VIDEO=false
+$ docker run -it -v $PWD:/e2e -w /e2e -e CYPRESS_VIDEO cypress/included:5.2.0
+```
+
 # Existing limitations
 
 Document translate test works only in Chrome-based browsers, but not in Firefox, as this type of translation causes a
