@@ -2,7 +2,6 @@
   "name": "test_translate_cypress",
   "version": "0.1.0",
   "description": "Example how to test Google Translate page using Cypress framework.",
-  "main": "index.js",
   "author": "Stanislav Tkachenko",
   "license": "MIT",
   "dependencies": {
