@@ -13,7 +13,7 @@ Example how to test basic Google Translate functionality using Cypress.
 
 ### Run in interactive mode with time-travel
 
-1. `yarn cypress run`
+1. `yarn cypress open`
 1. Select specific spec file or `run all tests`
 
 ### Run in non-interactive CLI mode
@@ -26,9 +26,9 @@ Specific browser: `yarn run cypress run -b firefox`
 
 ## Docker
 
-All available specs in Electron browser: `docker run -it -v $PWD:/e2e -w /e2e cypress/included:5.2.0`
+All available specs in Electron browser: `docker-compose run cypress`
 
-Specific browser: `docker run -it -v $PWD:/e2e -w /e2e cypress/included:5.2.0 -b chromium`
+Specific browser: `docker-compose run cypress -b chromium`
 
 ## Fetching results
 
@@ -39,7 +39,7 @@ For docker videos could be disable this way:
 
 ```
 $ CYPRESS_VIDEO=false
-$ docker run -it -v $PWD:/e2e -w /e2e -e CYPRESS_VIDEO cypress/included:5.2.0
+$ docker-compose run -e CYPRESS_VIDEO cypress
 ```
 
 # Existing limitations
